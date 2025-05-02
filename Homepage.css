@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+    border: none;
+}
+
+
+header {
+position: fixed;
+top: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+padding: 20px 40px;
+background: rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(5px);
+z-index: 10;
+}
+
+header .logo {
+font-size: 24px;
+font-weight: bold;
+letter-spacing: 2px;
+color: azure;
+text-shadow: 2px 2px 8px  black;
+}
+
+
+.top-nav a {
+margin-left: 20px;
+font-family: "Special Gothic Expanded One", sans-serif;
+font-weight: 800;
+color: white;
+text-decoration: none;
+transition: 0.3s;
+font-size: 18px;
+
+}
+
+.top-nav a:hover {
+color: rgb(209, 195, 195);
+}
+
+/* Side Nav */
+.side-nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 20px;
+    z-index: 10;
+    background-color: rgb(0, 0, 0,0.3);
+    height: 100%;
+    margin-top: 87px;
+    }
+    
+    .side-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 8px  black;
+    }
+    
+    .side-nav a:hover {
+        color: aquamarine;
+       
+    }
+
+
+    /* Home tag line */
+    main {
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 5 20px;
+    }
+    
+    .hero-content h1 {
+    font-size: 58px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin-bottom: 10px;
+    color: azure;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px  black;
+    }
+    
+    
+    .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: azure;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 6px;
+    text-transform: uppercase;
+     text-shadow: 2px 2px 8px  black;
+    }
+
+    .btn {
+padding: 10px 25px;
+border: 2px solid white;
+text-decoration: none;
+color: white;
+font-family: "Special Gothic Expanded One", sans-serif;
+transition: transform 0.3s;
+text-shadow: 2px 2px 8px  black;
+}
+
+ .btn:hover {
+background:#006039;
+color:azure;
+border-color: #006039;
+transform: scale(1.2);
+}
